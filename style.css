@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #242531;
+}
+
+.profile-image{
+    width: 60%;
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+}
+
+.name{
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    
+}
+
+.designation{
+    color: #94D9EA;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description{
+    color: #f5f5f5;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.personal-details{
+    font-size: 1rem;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.skills{
+    color: #f5f5f5;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+
+.skills-title{
+    margin-bottom: 15px;
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.para{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.eucation-content{
+    padding: 0.5rem;
+    color: gray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
